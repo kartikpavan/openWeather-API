@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #21325e;
+  color: #f0f0f0;
+  font-family: "Prompt", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+}
+/* span {
+  color: #f1d00a;
+} */
+
+.container {
+  width: 50%;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+button {
+  /* remove all default styles from button */
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  /* adding custom button styles */
+  border: 2px solid #f1d00a;
+  padding: 0.75rem 3rem;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  transition: all 0.25s;
+}
+
+button:hover {
+  box-shadow: 0px 12px 10px -8px #ccc504;
+  transform: translateY(-10%);
+}
+input {
+  outline: none;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: block;
+  max-width: 100%;
+  border-bottom: 2px solid #ccc504;
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  font-family: "Prompt", sans-serif;
+}
