@@ -4,7 +4,7 @@ const cityInput = document.getElementById("city-input");
 
 //Fetch weather from API
 const fetchWeather = async (city) => {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3232595214011a9bd13e4e80dd238181`;
+  const url = `/api?q=${city}`;
 
   const res = await fetch(url);
   const data = await res.json();

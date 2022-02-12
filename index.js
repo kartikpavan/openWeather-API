@@ -24,6 +24,10 @@ const limiter = rateLimit({
 // Apply the rate limiting middleware to all requests
 app.use(limiter);
 app.set("trust proxy", 1);
+
+//Static folders
+app.use(express.static("public"));
+
 //Routes
 app.use("/api", require("./routes/index"));
 
